@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tác phẩm - Theo dấu chân Người</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .book-detail {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-detail { grid-template-columns: 1fr; }
+        }
+        .book-cover img {
+            width: 100%;
+            border: 1px solid var(--divider);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-info h2 { color: var(--main-red); margin-bottom: 15px; }
+        .info-row { margin-bottom: 10px; border-bottom: 1px dashed var(--divider); padding-bottom: 5px; }
+        .info-label { font-weight: bold; width: 120px; display: inline-block; }
+        .copyright-note {
+            background: #fff3f3;
+            padding: 15px;
+            border-left: 4px solid var(--main-red);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tác phẩm về Hồ Chí Minh</h1>
+        <h2>Theo dấu chân Người</h2>
+    </header>
+
+    <div class="container">
+        <a href="tac_pham.html" class="back-link" style="display: inline-block; margin-bottom: 20px; color: var(--main-red); text-decoration: none; font-weight: bold;">← Quay lại danh mục Tác phẩm</a>
+        
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="nhatkytrongtu-large.jpg" alt="Bìa sách Nhật ký trong tù">
+            </div>
+            <div class="book-info">
+                <h2>Nhật ký trong tù (Ngục trung nhật ký)</h2>
+                <div class="info-row"><span class="info-label">Tác giả:</span> Hồ Chí Minh</div>
+                <div class="info-row"><span class="info-label">Phân loại:</span> Bảo vật quốc gia [cite: 42]</div>
+                <div class="info-row"><span class="info-label">Năm sáng tác:</span> 1942 - 1943</div>
+                
+                <p style="margin: 20px 0; text-align: justify;">
+                    Tập thơ gồm 133 bài thơ bằng chữ Hán, phản ánh tâm hồn cao đẹp, nghị lực phi thường và trí tuệ anh minh của Người trong thời gian bị chính quyền Tưởng Giới Thạch giam cầm.
+                </p>
+
+                <a href="https://chinhphu.vn/cac-bao-vat-quoc-gia" target="_blank" class="btn">Đọc tại nguồn chính thống</a>
+
+                <div class="copyright-note">
+                    <strong>Lưu ý về bản quyền:</strong> Tài liệu chỉ mang tính tham khảo. Chúng tôi ưu tiên giới thiệu và dẫn link tới các nguồn lưu trữ chính thống của Nhà nước[cite: 48, 49].
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Học tập – Rèn luyện – Phụng sự</footer>
+
+</body>
+</html>
