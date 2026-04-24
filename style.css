@@ -1,0 +1,203 @@
+/* style.css */
+:root {
+    --main-red: #950606;
+    --accent-yellow: #FFCE1B;
+    --bg-main: #FFFFC5;
+    --bg-alt: #FDFBD4;
+    --divider: #D3D3D3;
+    --text-main: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Có thể thay bằng font Serif cho tiêu đề theo concept */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header & Menu */
+header {
+    background-color: var(--main-red);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 5px solid var(--accent-yellow);
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: var(--accent-yellow);
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #7a0505;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Banner & Intro */
+.banner {
+    background-color: var(--bg-alt);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid var(--divider);
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.banner h3 {
+    color: var(--main-red);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Container & Cards (Không gian trưng bày số) */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--main-red);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--accent-yellow);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: var(--main-red);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn {
+    background-color: var(--main-red);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-yellow);
+    color: var(--main-red);
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-red);
+    color: var(--accent-yellow);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+/* Typography bổ sung cho nội dung bài viết */
+.article-body h4 {
+    color: var(--main-red);
+    margin: 25px 0 10px 0;
+    font-size: 1.3rem;
+}
+
+/* Nút quay lại tinh tế */
+.back-link:hover {
+    text-decoration: underline;
+    color: #ce0808;
+}
+
+/* Tối ưu hiển thị cho mobile */
+@media (max-width: 600px) {
+    header h2 { font-size: 1.5rem; }
+    .article-content { padding: 20px; }
+}
