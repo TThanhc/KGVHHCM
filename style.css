@@ -201,3 +201,135 @@ footer {
     header h2 { font-size: 1.5rem; }
     .article-content { padding: 20px; }
 }
+
+/* =========================================
+   CẬP NHẬT CSS CHO TRANG CHỦ THEO ẢNH MỚI 
+========================================= */
+
+/* Header Mới */
+.main-header {
+    background-color: var(--main-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent-yellow);
+    font-family: serif;
+}
+
+.logo img { width: 40px; height: 40px; }
+.logo-text { font-size: 1rem; line-height: 1.2; color: #fff;}
+.logo-text .highlight { font-size: 1.5rem; color: var(--accent-yellow); font-weight: bold; font-style: italic;}
+
+.main-nav { background: transparent; padding: 0; }
+.main-nav a { font-size: 0.9rem; font-weight: bold; }
+.main-nav a.active { color: var(--accent-yellow); }
+
+.search-box { display: flex; background: white; border-radius: 20px; overflow: hidden; padding: 2px 10px; }
+.search-box input { border: none; outline: none; padding: 5px; width: 150px; }
+.search-box button { background: none; border: none; cursor: pointer; }
+
+/* Hero Slider (Khu vực chuyển cảnh) */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Độ cao khung banner */
+    background: linear-gradient(to bottom, #fdfbd4 0%, #e8dcb3 100%); /* Màu nền dạng giấy cũ */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Hiệu ứng mờ dần trong 1 giây */
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+/* Layout Slide 1 */
+.slide-layout-1 { justify-content: space-between; }
+.slide-image-left img { height: 450px; object-fit: contain; }
+.slide-text-center { text-align: center; flex-grow: 1; }
+
+/* Layout Slide 2 */
+.slide-layout-2 { justify-content: space-between; padding-top: 40px;}
+.slide-text-left { width: 50%; }
+.slide-image-right img { height: 450px; object-fit: contain; }
+
+/* Typography cho Slide */
+.title-main { color: var(--main-red); font-size: 2.5rem; text-transform: uppercase; margin-bottom: 5px; font-family: serif;}
+.title-sub { font-size: 1.2rem; color: #555; margin-bottom: 15px; }
+.desc { font-size: 1.1rem; margin-bottom: 20px; }
+.text-left { text-align: left; }
+.text-justify { text-align: justify; line-height: 1.8;}
+.quote { color: var(--main-red); font-style: italic; font-weight: bold; }
+.lotus-icon { font-size: 2rem; color: var(--main-red); margin-top: 10px; }
+
+/* Khối Cards nổi đè lên Banner */
+.overlap-cards {
+    margin-top: -80px; /* Đẩy khối này lên trên đè vào banner */
+    position: relative;
+    z-index: 10;
+}
+
+.feature-card {
+    flex-direction: row; /* Xếp icon và chữ ngang nhau */
+    align-items: center;
+    padding: 30px;
+    background: #fffcf0; /* Nền vàng kem nhạt */
+    border: 1px solid #e0d5b5;
+    border-radius: 12px;
+}
+
+.card-icon {
+    font-size: 3rem;
+    padding: 20px;
+    background: #f8edcc;
+    border-radius: 50%;
+    color: var(--main-red);
+    margin-right: 20px;
+}
+
+.feature-card .card-content { text-align: left; padding: 0; }
+.btn-dark-red { background-color: var(--main-red); }
+
+/* Footer Mới */
+.main-footer {
+    background-color: var(--main-red);
+    color: var(--accent-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-top: 40px;
+}
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 10px;
+}
+.footer-right a:hover { color: var(--accent-yellow); }

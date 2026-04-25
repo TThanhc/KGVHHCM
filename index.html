@@ -8,52 +8,104 @@
 </head>
 <body>
 
-    <header>
-        <h1>Không gian văn hóa gắn với cuộc đời, sự nghiệp, tư tưởng, đạo đức, phong cách Hồ Chí Minh</h1>
-        <h2>Theo dấu chân Người</h2>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo-bac.png" alt="Logo">
+            <div class="logo-text">Theo dấu chân<br><span class="highlight">Người</span></div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">TRANG CHỦ</a>
+            <a href="ky-su.html">KÝ SỰ HỒ CHÍ MINH</a>
+            <a href="tac-pham.html">TÁC PHẨM VỀ HỒ CHÍ MINH</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="button">🔍</button>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="ky_su.html">Ký sự HCM</a>
-        <a href="tac_pham.html">Tác phẩm về HCM</a>
-    </nav>
-
-    <div class="banner">
-        <img src="banner-home.jpg" alt="Chủ tịch Hồ Chí Minh làm việc" style="max-width: 600px;">
-        <h3>Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</h3>
-        <p><i>"Kim chỉ nam cho hành động của mỗi chúng ta"</i></p>
-        <br>
-        <div style="max-width: 800px; margin: 0 auto; text-align: justify;">
-            <p><strong>Giới thiệu:</strong> Chuyên trang được xây dựng nhằm tổng hợp và lan tỏa các giá trị cao đẹp từ cuộc đời, sự nghiệp của Chủ tịch Hồ Chí Minh. Đây là không gian văn hóa số giúp thế hệ trẻ dễ dàng tiếp cận, học hỏi và rèn luyện theo tấm gương của Người.</p>
+    <section class="hero-slider">
+        
+        <div class="slide active" id="slide-1">
+            <div class="slide-content slide-layout-1">
+                <div class="slide-image-left">
+                    <img src="bac-lam-viec.png" alt="Bác Hồ làm việc">
+                </div>
+                <div class="slide-text-center">
+                    <h2 class="title-main">THEO DẤU CHÂN NGƯỜI</h2>
+                    <h3 class="title-sub">KHÔNG GIAN VĂN HÓA SỐ</h3>
+                    <p class="desc">về cuộc đời, sự nghiệp, tư tưởng, đạo đức, phong cách<br><strong>Hồ Chí Minh</strong></p>
+                    <p class="quote"><i>"Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh<br>là kim chỉ nam cho hành động của mỗi chúng ta."</i></p>
+                    <div class="lotus-icon">🪷</div>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div class="container">
+        <div class="slide" id="slide-2">
+            <div class="slide-content slide-layout-2">
+                <div class="slide-text-left">
+                    <h2 class="title-main text-left">GIỚI THIỆU</h2>
+                    <p class="desc text-justify">
+                        Website là không gian văn hóa số nhằm lưu giữ và lan tỏa những giá trị tư tưởng, đạo đức, phong cách Hồ Chí Minh. Đây là nơi để mỗi đoàn viên, sinh viên học tập, rèn luyện và noi theo tấm gương của Người trong cuộc sống và công việc hằng ngày.
+                    </p>
+                </div>
+                <div class="slide-image-right">
+                    <img src="bac-dung.png" alt="Bác Hồ đứng">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container overlap-cards">
         <div class="grid-2">
-            <div class="card">
-                <img src="kysu-thumb.jpg" alt="Ký sự Hồ Chí Minh">
+            <div class="card feature-card">
+                <div class="card-icon">📝</div>
                 <div class="card-content">
-                    <h3 class="card-title">Ký sự Hồ Chí Minh</h3>
-                    <p class="card-desc">Tổng hợp các bài viết cảm nhận, suy nghĩ về cuộc đời, tư tưởng, đạo đức, phong cách Hồ Chí Minh với nhiều góc nhìn đa dạng.</p>
-                    <a href="ky_su.html" class="btn">Xem chi tiết</a>
+                    <h3 class="card-title">KÝ SỰ HỒ CHÍ MINH</h3>
+                    <p class="card-desc">Tổng hợp các bài viết cảm nhận, suy nghĩ về Bác Hồ trong nhiều lĩnh vực cuộc sống.</p>
+                    <a href="ky-su.html" class="btn btn-dark-red">Xem chi tiết</a>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="tacpham-thumb.jpg" alt="Tác phẩm về Hồ Chí Minh">
+            <div class="card feature-card">
+                <div class="card-icon">📚</div>
                 <div class="card-content">
-                    <h3 class="card-title">Tác phẩm về Hồ Chí Minh</h3>
-                    <p class="card-desc">Không gian tư liệu lưu trữ 5 bảo vật quốc gia của Người cùng các đầu sách, tài liệu nghiên cứu, hồi ký giá trị.</p>
-                    <a href="tac_pham.html" class="btn">Xem chi tiết</a>
+                    <h3 class="card-title">TÁC PHẨM VỀ HỒ CHÍ MINH</h3>
+                    <p class="card-desc">Tổng hợp các tác phẩm của Bác và sách, công trình viết về Bác.</p>
+                    <a href="tac-pham.html" class="btn btn-dark-red">Xem chi tiết</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        Học tập – Rèn luyện – Phụng sự
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="#">Đóng góp bài viết</a> | 
+            <a href="#">Liên hệ</a>
+        </div>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+
+            setInterval(() => {
+                // Tắt slide hiện tại
+                slides[currentSlide].classList.remove('active');
+                
+                // Chuyển sang slide tiếp theo (Nếu đến cuối thì quay lại 0)
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                // Bật slide mới
+                slides[currentSlide].classList.add('active');
+            }, 5000); // 5000 milliseconds = 5 giây
+        });
+    </script>
 </body>
 </html>
