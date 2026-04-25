@@ -3,69 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ký sự Hồ Chí Minh</title>
+    <title>Ký sự Hồ Chí Minh - Theo dấu chân Người</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Không gian văn hóa Hồ Chí Minh</h1>
-        <h2>Theo dấu chân Người</h2>
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo-bac.png" alt="Logo">
+            <div class="logo-text">Theo dấu chân<br><span class="highlight">Người</span></div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">TRANG CHỦ</a>
+            <a href="ky-su.html" class="active">KÝ SỰ HỒ CHÍ MINH</a>
+            <a href="tac-pham.html">TÁC PHẨM VỀ HỒ CHÍ MINH</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="button">🔍</button>
+        </div>
     </header>
 
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="ky_su.html" style="color: var(--accent-yellow);">Ký sự HCM</a>
-        <a href="tac_pham.html">Tác phẩm về HCM</a>
-    </nav>
-
-    <div class="banner" style="padding: 20px;">
-        <h2 class="section-title">Ký sự Hồ Chí Minh</h2>
-        <p>Nơi tổng hợp các bài viết cảm nhận, suy nghĩ về Hồ Chí Minh. Mang đến góc nhìn đa dạng từ nhiều lĩnh vực khác nhau.</p>
-    </div>
-
     <div class="container">
-        <div style="margin-bottom: 20px; text-align: center;">
-            <span style="font-weight: bold; margin-right: 15px;">Chủ đề:</span>
-            <a href="#" style="margin-right: 15px; color: var(--main-red);">Đạo đức & Lối sống</a> | 
-            <a href="#" style="margin: 0 15px; color: var(--text-main);">Tự học & Cầu tiến</a> |
-            <a href="#" style="margin: 0 15px; color: var(--text-main);">Đoàn kết & Phục vụ</a> |
-            <a href="#" style="margin-left: 15px; color: var(--text-main);">Sáng tạo & Đổi mới</a>
+        <div class="page-title-section">
+            <h2>KÝ SỰ HỒ CHÍ MINH</h2>
+            <p>Tổng hợp các bài viết cảm nhận, suy nghĩ<br>về cuộc đời, tư tưởng, đạo đức, phong cách Hồ Chí Minh.</p>
         </div>
 
-        <div class="grid-3">
-            <div class="card">
-                <img src="baiviet1.jpg" alt="Bài viết 1">
-                <div class="card-content">
-                    <h3 class="card-title">Bác Hồ với tinh thần tự học suốt đời</h3>
-                    <p class="card-desc">Tấm gương tự học của Bác là bài học vô giá cho thế hệ trẻ trong công cuộc đổi mới và hội nhập...</p>
-                    <a href="bai_viet_1.html" class="btn">Xem thêm</a>
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">Tất cả</button>
+            <button class="tab-btn" data-filter="tu-tuong">Tư tưởng</button>
+            <button class="tab-btn" data-filter="dao-duc">Đạo đức</button>
+            <button class="tab-btn" data-filter="phong-cach">Phong cách</button>
+            <button class="tab-btn" data-filter="van-hoa">Văn hóa - Đời sống</button>
+        </div>
+
+        <div class="article-list">
+            <div class="horizontal-card" data-category="dao-duc">
+                <div class="horizontal-card">
+                    <img src="ky-su-1.png" alt="Bác Hồ với tinh thần tự học">
+                    <div class="card-body">
+                        <div>
+                            <h3>Bác Hồ với tinh thần tự học suốt đời</h3>
+                            <p>Tấm gương tự học của Bác là bài học quý giá cho mỗi đoàn viên, sinh viên hôm nay...</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-date">20/05/2024</span>
+                            <a href="bai_viet_1.html" class="btn btn-dark-red">Xem thêm</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="baiviet2.jpg" alt="Bài viết 2">
-                <div class="card-content">
-                    <h3 class="card-title">Phong cách gần gũi, giản dị của Bác</h3>
-                    <p class="card-desc">Sự giản dị trong tác phong sinh hoạt, lời ăn tiếng nói hằng ngày của Người...</p>
-                    <a href="bai_viet_2.html" class="btn">Xem thêm</a>
+            <div class="horizontal-card" data-category="phong-cach">
+                <div class="horizontal-card">
+                    <img src="ky-su-2.png" alt="Phong cách gần gũi, giản dị của Bác">
+                    <div class="card-body">
+                        <div>
+                            <h3>Phong cách gần gũi, giản dị của Bác</h3>
+                            <p>Sự giản dị trong lời nói, việc làm và trong sinh hoạt hằng ngày của Bác...</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-date">15/05/2024</span>
+                            <a href="chi-tiet-bai-viet.html" class="btn btn-dark-red">Xem thêm</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="card">
-                <img src="baiviet3.jpg" alt="Bài viết 3">
-                <div class="card-content">
-                    <h3 class="card-title">Tư tưởng Hồ Chí Minh về Thanh niên</h3>
-                    <p class="card-desc">Thanh niên là rường cột của nước nhà, là chủ nhân tương lai của đất nước...</p>
-                    <a href="bai_viet_3.html" class="btn">Xem thêm</a>
+            <div class="horizontal-card" data-category="tu-tuong">
+                <div class="horizontal-card">
+                    <img src="ky-su-3.png" alt="Tư tưởng Hồ Chí Minh về thanh niên">
+                    <div class="card-body">
+                        <div>
+                            <h3>Tư tưởng Hồ Chí Minh về thanh niên</h3>
+                            <p>Thanh niên là rường cột của nước nhà, là chủ nhân tương lai của đất nước...</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="card-date">10/05/2024</span>
+                            <a href="chi-tiet-bai-viet.html" class="btn btn-dark-red">Xem thêm</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        Học tập – Rèn luyện – Phụng sự
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="#">Đóng góp bài viết</a> | 
+            <a href="#">Liên hệ</a>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lấy tất cả các nút tab và các thẻ bài viết
+            const filterBtns = document.querySelectorAll('.tab-btn');
+            const articles = document.querySelectorAll('.horizontal-card');
+
+            // Lặp qua từng nút để gắn sự kiện click
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    
+                    // 1. Xóa trạng thái 'active' (màu đỏ) ở tất cả các nút
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    
+                    // 2. Thêm trạng thái 'active' cho nút vừa được click
+                    this.classList.add('active');
+
+                    // 3. Lấy giá trị của bộ lọc (vd: 'tu-tuong', 'dao-duc', 'all')
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // 4. Lặp qua từng bài viết để kiểm tra
+                    articles.forEach(article => {
+                        const articleCategory = article.getAttribute('data-category');
+
+                        // Nếu chọn 'Tất cả' HOẶC chủ đề bài viết khớp với nút bấm -> Hiện bài viết
+                        if (filterValue === 'all' || filterValue === articleCategory) {
+                            article.classList.remove('hide-article');
+                        } 
+                        // Ngược lại thì ẩn bài viết đi
+                        else {
+                            article.classList.add('hide-article');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 
 </body>
 </html>

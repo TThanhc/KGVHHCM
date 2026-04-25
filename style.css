@@ -333,3 +333,140 @@ footer {
     margin: 0 10px;
 }
 .footer-right a:hover { color: var(--accent-yellow); }
+
+/* =========================================
+   CẬP NHẬT CSS CHO TRANG KÝ SỰ
+========================================= */
+
+/* Khu vực tiêu đề trang */
+.page-title-section {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.page-title-section h2 {
+    color: var(--main-red);
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: serif;
+}
+
+.page-title-section p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Thanh bộ lọc (Tabs) */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px auto 40px;
+    max-width: 900px;
+}
+
+.tab-btn {
+    background-color: #fcf4db; /* Màu nền be nhạt */
+    color: #333;
+    border: 1px solid #e5d8b0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: var(--main-red);
+    color: white;
+    border-color: var(--main-red);
+}
+
+/* Danh sách bài viết dạng khối ngang */
+.article-list {
+    max-width: 900px; /* Giới hạn độ rộng để danh sách nằm giữa màn hình */
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.horizontal-card {
+    background: #fffdf5;
+    border: 1px solid #e5d8b0;
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horizontal-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.horizontal-card img {
+    width: 280px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0; /* Đảm bảo ảnh không bị bóp méo khi màn hình nhỏ */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h3 {
+    color: #000;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.card-body p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-date {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.btn-dark-red {
+    background-color: var(--main-red);
+    border-radius: 8px;
+    padding: 8px 25px;
+}
+
+/* Tối ưu cho giao diện Mobile/Tablet */
+@media (max-width: 768px) {
+    .horizontal-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .horizontal-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Class dùng để ẩn bài viết khi lọc */
+.horizontal-card.hide-article {
+    display: none !important;
+}
