@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tác phẩm - Theo dấu chân Người</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-detail { grid-template-columns: 1fr; }
+        }
+        .book-cover img {
+            width: 100%;
+            border: 1px solid var(--divider);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-info h2 { color: var(--main-red); margin-bottom: 15px; }
+        .info-row { margin-bottom: 10px; border-bottom: 1px dashed var(--divider); padding-bottom: 5px; }
+        .info-label { font-weight: bold; width: 120px; display: inline-block; }
+        .copyright-note {
+            background: #fff3f3;
+            padding: 15px;
+            border-left: 4px solid var(--main-red);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .direct-reading {
+            margin-top: 30px;
+            background: #fffdf5;
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        .direct-reading h3 {
+            color: var(--main-red);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .reading-section {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--divider);
+        }
+        .reading-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .reading-section h4 {
+            color: #7a0505;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .reading-section p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .reading-section p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tác phẩm về Hồ Chí Minh</h1>
+        <h2>Theo dấu chân Người</h2>
+    </header>
+
+    <div class="container">
+        <a href="../tac_pham.html" class="back-link" style="display: inline-block; margin-bottom: 20px; color: var(--main-red); text-decoration: none; font-weight: bold;">← Quay lại danh mục Tác phẩm</a>
+        
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="../img/duongkachmenh.png" alt="Bìa sách Đường Kách Mệnh">
+            </div>
+            <div class="book-info">
+                <h2>ĐƯỜNG KÁCH MỆNH</h2>
+                <div class="info-row"><span class="info-label">Tác giả:</span> Hồ Chí Minh</div>
+                <div class="info-row"><span class="info-label">Phân loại:</span> Bảo vật quốc gia</div>
+                <div class="info-row"><span class="info-label">Năm sáng tác:</span> 1927 </div>
+                
+                <!-- <p style="margin: 20px 0; text-align: justify;">
+                    Tập thơ gồm 133 bài thơ bằng chữ Hán, phản ánh tâm hồn cao đẹp, nghị lực phi thường và trí tuệ anh minh của Người trong thời gian bị chính quyền Tưởng Giới Thạch giam cầm.
+                </p> -->
+
+                <a href="Tư liệu về Đường Kách Mệnh" target="_blank" class="btn">Đọc tại nguồn chính thống</a>
+
+                <div class="copyright-note">
+                    <strong>Lưu ý về bản quyền:</strong> Tài liệu chỉ mang tính tham khảo. Ưu tiên giới thiệu và dẫn link tới các nguồn lưu trữ chính thống của Nhà nước.
+                </div>
+            </div>
+        </div>
+
+        <section class="direct-reading">
+            <h3>Đọc trực tiếp</h3>
+
+            <article class="reading-section">
+                <h4>Bối cảnh sáng tác</h4>
+                <p>
+                    Sau Cách mạng Tháng Mười Nga năm 1917, chủ nghĩa Mác – Lênin dần trở thành nền tảng tư tưởng của phong trào cách mạng vô sản trên toàn thế giới. Đặc biệt, sự ra đời của Quốc tế Cộng sản năm 1919 đã mở ra một thời đại mới cho cuộc đấu tranh giải phóng dân tộc và giải phóng giai cấp. 
+                    Từ cơ sở đó, những quan điểm của V.I. Lênin về vấn đề dân tộc và thuộc địa, nhất là trong “Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và vấn đề thuộc địa” đã có ảnh hưởng sâu sắc đến Nguyễn Ái Quốc, giúp Người từng bước xác định con đường cách mạng vô sản cho Việt Nam.
+                </p>
+                <p>
+                    Mặt khác, Việt Nam lúc bấy giờ là một xã hội thuộc địa nửa phong kiến, tồn tại hai mâu thuẫn cơ bản là mâu thuẫn giữa toàn thể dân tộc Việt Nam với thực dân Pháp và mâu thuẫn giữa nông dân với giai cấp phong kiến. Các phong trào yêu nước đầu thế kỷ XX dù diễn ra sôi nổi nhưng đều lần lượt thất bại do chưa có đường lối cách mạng đúng đắn và một tổ chức lãnh đạo thống nhất, vững mạnh. 
+                    Trước yêu cầu cấp thiết của thực tiễn cách mạng, năm 1927, Nguyễn Ái Quốc đã viết tác phẩm nhằm truyền bá chủ nghĩa Mác – Lênin vào Việt Nam, đồng thời chuẩn bị về tư tưởng, chính trị và tổ chức, tạo tiền đề quan trọng cho sự ra đời của Đảng Cộng sản Việt Nam sau này.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Nội dung tác phẩm</h4>
+                <p>
+                    Tác phẩm đã nêu những nội dung cốt lõi về cách mạng Việt Nam. Trước hết, về tư cách người cách mệnh, cần có đạo đức cần, kiệm, liêm, chính, vị công vô tư, sống chân thành, làm việc có tổ chức, biết phục tùng tập thể và hành động quyết đoán. 
+                    Về con đường cách mệnh, tác phẩm xác định cách mạng là phá cũ xây mới, đồng thời khẳng định cách mạng Việt Nam phải đi theo con đường giải phóng dân tộc gắn với giải phóng giai cấp, học tập kinh nghiệm cách mạng thế giới, đặc biệt là Cách mạng Tháng Mười Nga. Về lực lượng cách mạng, công nông là lực lượng nòng cốt, các tầng lớp khác như trí thức, tiểu tư sản là lực lượng có thể liên minh. 
+                    Về đoàn kết quốc tế, cách mạng Việt Nam là một bộ phận của cách mạng thế giới, cần gắn bó và tranh thủ sự ủng hộ của phong trào công nhân và các lực lượng tiến bộ quốc tế. Về phương pháp cách mạng, cần tuyên truyền, giác ngộ, tổ chức quần chúng, phát huy sức mạnh toàn dân và giành chính quyền bằng bạo lực cách mạng khi cần thiết. Cuối cùng, Đảng Cộng sản giữ vai trò quyết định thắng lợi của cách mạng, phải được xây dựng vững mạnh trên nền tảng chủ nghĩa Mác – Lênin để lãnh đạo toàn bộ phong trào.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Giá trị tác phẩm</h4>
+                <p>
+                    Tác phẩm Đường cách mệnh có vai trò quan trọng trong việc chuẩn bị về tư tưởng, chính trị và tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam. Trước hết, về tư tưởng, tác phẩm truyền bá chủ nghĩa Mác – Lênin và tư tưởng Nguyễn Ái Quốc, góp phần thống nhất nhận thức, đồng thời phê phán các quan điểm sai lầm như cải lương, chủ nghĩa cá nhân, chủ nghĩa quốc gia, qua đó xác lập hệ tư tưởng của giai cấp công nhân. Tiếp theo, về chính trị, tác phẩm xây dựng lập trường cách mạng vô sản, xác định đường lối cơ bản cho cách mạng Việt Nam, làm nền tảng cho việc hình thành Cương lĩnh chính trị của Đảng và góp phần chấm dứt khủng hoảng về đường lối cứu nước. Bên cạnh đó, về tổ chức, tác phẩm làm sâu sắc nhận thức sứ mệnh lịch sử của đội ngũ cán bộ cách mạng, đồng thời định hướng xây dựng các tổ chức quần chúng như công hội, nông hội, thanh niên, phụ nữ, tạo cơ sở tổ chức cho sự ra đời của Đảng.
+                </p>    
+                <p> 
+                    Cuối cùng, về giá trị lý luận và thực tiễn, Đường cách mệnh là sự vận dụng sáng tạo chủ nghĩa Mác – Lênin vào điều kiện Việt Nam, kết hợp chặt chẽ giữa lý luận và thực tiễn, giữa lịch sử và logic, từ đó khẳng định con đường cách mạng vô sản là con đường giải phóng dân tộc. Điểm sáng tạo của tác phẩm là bổ sung quan điểm về cách mạng thuộc địa có thể giành thắng lợi trước cách mạng chính quốc và có tác động trở lại cách mạng thế giới. Với giá trị lý luận và thực tiễn sâu sắc, tác phẩm đã tạo chuyển biến mạnh mẽ trong nhận thức và hành động cách mạng, chuẩn bị điều kiện trực tiếp cho sự ra đời của Đảng Cộng sản Việt Nam, đồng thời khẳng định nền tảng tư tưởng của Đảng là chủ nghĩa Mác – Lênin và tư tưởng Hồ Chí Minh.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="https://www.facebook.com/DoanHoiNBH.hcmussh">Đóng góp bài viết</a> | 
+            <a href="mailto:dtn.nhatbanhoc@hcmussh.edu.vn">Liên hệ</a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tác phẩm - Theo dấu chân Người</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-detail { grid-template-columns: 1fr; }
+        }
+        .book-cover img {
+            width: 100%;
+            border: 1px solid var(--divider);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-info h2 { color: var(--main-red); margin-bottom: 15px; }
+        .info-row { margin-bottom: 10px; border-bottom: 1px dashed var(--divider); padding-bottom: 5px; }
+        .info-label { font-weight: bold; width: 120px; display: inline-block; }
+        .copyright-note {
+            background: #fff3f3;
+            padding: 15px;
+            border-left: 4px solid var(--main-red);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .direct-reading {
+            margin-top: 30px;
+            background: #fffdf5;
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        .direct-reading h3 {
+            color: var(--main-red);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .reading-section {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--divider);
+        }
+        .reading-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .reading-section h4 {
+            color: #7a0505;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .reading-section p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .reading-section p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tác phẩm về Hồ Chí Minh</h1>
+        <h2>Theo dấu chân Người</h2>
+    </header>
+
+    <div class="container">
+        <a href="../tac_pham.html" class="back-link" style="display: inline-block; margin-bottom: 20px; color: var(--main-red); text-decoration: none; font-weight: bold;">← Quay lại danh mục Tác phẩm</a>
+        
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="../img/dichuc.png" alt="Bìa sách Di Chúc">
+            </div>
+            <div class="book-info">
+                <h2>DI CHÚC CỦA CHỦ TỊCH HỒ CHÍ MINH</h2>
+                <div class="info-row"><span class="info-label">Tác giả:</span> Hồ Chí Minh</div>
+                <div class="info-row"><span class="info-label">Phân loại:</span> Bảo vật quốc gia</div>
+                <div class="info-row"><span class="info-label">Năm viết:</span> 1965  </div>
+                
+                <!-- <p style="margin: 20px 0; text-align: justify;">
+                    Tập thơ gồm 133 bài thơ bằng chữ Hán, phản ánh tâm hồn cao đẹp, nghị lực phi thường và trí tuệ anh minh của Người trong thời gian bị chính quyền Tưởng Giới Thạch giam cầm.
+                </p> -->
+
+                <a href="https://baochinhphu.vn/toan-van-di-chuc-cua-chu-tich-ho-chi-minh-102169104.htm" target="_blank" class="btn">Đọc tại nguồn chính thống</a>
+
+                <div class="copyright-note">
+                    <strong>Lưu ý về bản quyền:</strong> Tài liệu chỉ mang tính tham khảo. Ưu tiên giới thiệu và dẫn link tới các nguồn lưu trữ chính thống của Nhà nước.
+                </div>
+            </div>
+        </div>
+
+        <section class="direct-reading">
+            <h3>Đọc trực tiếp</h3>
+
+            <article class="reading-section">
+                <h4>Bối cảnh ra đời</h4>
+                <p>
+                    Trong bối cảnh cuộc kháng chiến chống Mỹ cứu nước đang diễn ra vô cùng ác liệt, và cả dân tộc lúc này đang dồn toàn lực cho sự nghiệp giải phóng miền Nam, thống nhất đất nước thì sức khỏe của Chủ tịch Hồ Chí Minh đã giảm sút, nhưng Người vẫn dành thời gian suy nghĩ và viết Di chúc để căn dặn toàn Đảng, toàn dân và toàn quân về sự nghiệp cách mạng lâu dài. Di chúc được Người viết từ năm 1965 và hoàn thiện dần trong các năm 1968 và 1969, qua nhiều lần chỉnh sửa, bổ sung, thể hiện sự cân nhắc kỹ lưỡng và tầm nhìn chiến lược sâu xa của Người đối với tương lai đất nước. Di chúc ra đời còn gắn với niềm tin vững chắc vào thắng lợi của cuộc kháng chiến chống Mỹ, đồng thời thể hiện tình cảm sâu nặng của Hồ Chí Minh đối với Tổ quốc, nhân dân và thế hệ mai sau. 
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Nội dung</h4>
+                <p>
+                    <strong>Di chúc của Chủ tịch Hồ Chí Minh</strong> là văn kiện lịch sử quan trọng, thể hiện những lời căn dặn cuối cùng của Người đối với toàn Đảng, toàn dân và toàn quân. Trước hết, Người nói về Đảng, nhấn mạnh vai trò then chốt của Đảng trong sự nghiệp cách mạng, yêu cầu Đảng phải giữ gìn sự đoàn kết, trong sạch, thường xuyên tự chỉnh đốn để xứng đáng là người lãnh đạo và người đầy tớ thật trung thành của nhân dân. Tiếp đến, Di chúc căn dặn về thanh niên – lực lượng quyết định tương lai đất nước. Người bày tỏ niềm tin sâu sắc vào thế hệ trẻ, đồng thời nhấn mạnh nhiệm vụ bồi dưỡng, giáo dục để thanh niên trở thành những người vừa “hồng” vừa “chuyên”, tiếp tục sự nghiệp cách mạng.
+                </p>
+                <p>
+                    Ngoài ra, Di chúc cũng nói đến nhân dân lao động, thể hiện tình cảm yêu thương sâu sắc của Người đối với mọi tầng lớp nhân dân, đặc biệt là những người đã hy sinh, cống hiến cho Tổ quốc. Người đề nghị chăm lo đời sống nhân dân, thực hiện chính sách xã hội tốt hơn sau chiến tranh. Một nội dung quan trọng khác cũng được Người gửi gắm trước lúc đi xa là về cuộc kháng chiến chống Mỹ cứu nước, Người khẳng định cuộc kháng chiến nhất định thắng lợi, đồng thời dự báo những khó khăn, tổn thất và nhấn mạnh tinh thần đoàn kết, kiên cường để đi đến thắng lợi cuối cùng. Không những vậy, Di chúc còn thể hiện mong muốn cuối cùng của Người về việc sau khi đất nước thống nhất sẽ xây dựng một xã hội hòa bình, nhân dân ấm no, hạnh phúc, đất nước phồn vinh. Khép lại Di chúc, Người dành những lời riêng về việc tổ chức tang lễ đơn giản, tiết kiệm, tránh lãng phí. Như vậy, tổng thể Di chúc là sự kết tinh tư tưởng, đạo đức, tình cảm và tầm nhìn chiến lược của Hồ Chí Minh, để lại những chỉ dẫn sâu sắc cho sự nghiệp cách mạng lâu dài của dân tộc và là văn kiện đặc biệt quan trọng của Người trước lúc đi xa.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Giá trị tác phẩm</h4>
+                <p>
+                    <strong>Di chúc của Chủ tịch Hồ Chí Minh</strong> có giá trị to lớn và toàn diện trên nhiều phương diện cả về tư tưởng, chính trị lẫn lịch sử và đạo đức. Trước hết, về giá trị tư tưởng, Di chúc là sự kết tinh những tư tưởng lớn của Hồ Chí Minh về độc lập dân tộc, chủ nghĩa xã hội, về con người và hạnh phúc của nhân dân. Tác phẩm đã thể hiện niềm tin sâu sắc vào thắng lợi của cách mạng, vào sức mạnh đoàn kết của toàn dân tộc và vai trò của thế hệ trẻ trong tương lai đất nước.
+                </p>
+                <p>
+                    Tiếp theo, về giá trị chính trị, Di chúc là văn kiện có ý nghĩa định hướng quan trọng đối với sự nghiệp cách mạng Việt Nam sau khi Người qua đời. Những lời căn dặn về xây dựng Đảng, chăm lo nhân dân, bồi dưỡng thế hệ trẻ… đã trở thành cơ sở tư tưởng và kim chỉ nam cho hoạt động của Đảng và Nhà nước. Bên cạnh đó, về giá trị lịch sử, Di chúc là một tài liệu đặc biệt phản ánh tầm nhìn chiến lược của Hồ Chí Minh trong giai đoạn cuối của cuộc kháng chiến chống Mỹ, đồng thời ghi lại tâm nguyện của Người về tương lai đất nước hòa bình, thống nhất, phát triển. Không những thế, về giá trị đạo đức và nhân văn, tác phẩm thể hiện sâu sắc tình yêu thương bao la của Hồ Chí Minh đối với nhân dân, đồng chí, đồng bào; sự quan tâm đến từng đối tượng trong xã hội; đồng thời nêu tấm gương sáng về lối sống giản dị, trong sạch, hết lòng vì nước, vì dân. Như vậy, với những giá trị to lớn đó, Di chúc không chỉ là một văn kiện lịch sử đặc biệt quan trọng mà còn là di sản tinh thần vô giá của dân tộc Việt Nam, có sức sống lâu dài và ý nghĩa định hướng cho các thế hệ mai sau.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="https://www.facebook.com/DoanHoiNBH.hcmussh">Đóng góp bài viết</a> | 
+            <a href="mailto:dtn.nhatbanhoc@hcmussh.edu.vn">Liên hệ</a>
+        </div>
+    </footer>
+
+</body>
+</html>

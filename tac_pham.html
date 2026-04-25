@@ -8,10 +8,27 @@
 </head>
 <body>
 
-    <header>
+    <!-- <header>
         <h1>Không gian văn hóa Hồ Chí Minh</h1>
         <h2>Theo dấu chân Người</h2>
+    </header> -->
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo-bac.png" alt="Logo">
+            <div class="logo-text">Theo dấu chân<br><span class="highlight">Người</span></div>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">TRANG CHỦ</a>
+            <a href="ky_su.html" class="active">KÝ SỰ HỒ CHÍ MINH</a>
+            <a href="tac_pham.html">TÁC PHẨM VỀ HỒ CHÍ MINH</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm...">
+            <button type="button">🔍</button>
+        </div>
     </header>
+
 
     <nav>
         <a href="index.html">Trang chủ</a>
@@ -66,10 +83,19 @@
                 </div>
             </div>
 
+            <div class="card">
+                <img src="img/dichuc.png" alt="Di chúc của Chủ tịch Hồ Chí Minh">
+                <div class="card-content">
+                    <h3 class="card-title">Di chúc của Chủ tịch Hồ Chí Minh</h3>
+                    <p class="card-desc">Tác phẩm thể hiện quyết tâm và tinh thần yêu nước của Hồ Chí Minh trong cuộc kháng chiến chống Pháp.</p>
+                    <a href="tac_pham/di_chuc.html" class="btn" style="background-color: #555;">Link đọc hợp pháp</a>
+                </div>
+            </div>
+
         </div>
 
         <h3 style="color: var(--main-red); border-bottom: 1px solid var(--divider); padding-bottom: 10px; margin-bottom: 20px;">Nhóm 2: Tác phẩm viết về Hồ Chí Minh</h3>
-        <div class="grid-3">
+        <!-- <div class="grid-3">
             <div class="card">
                 <img src="bup-sen-xanh.jpg" alt="Búp sen xanh">
                 <div class="card-content">
@@ -86,13 +112,19 @@
                     <a href="ho_chi_minh_tieu_su.html" class="btn" style="background-color: #555;">Giới thiệu sách</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
-    <footer>
-        Học tập – Rèn luyện – Phụng sự
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="https://www.facebook.com/DoanHoiNBH.hcmussh">Đóng góp bài viết</a> | 
+            <a href="mailto:dtn.nhatbanhoc@hcmussh.edu.vn">Liên hệ</a>
+        </div>
     </footer>
-
 </body>
 </html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tác phẩm - Theo dấu chân Người</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-detail { grid-template-columns: 1fr; }
+        }
+        .book-cover img {
+            width: 100%;
+            border: 1px solid var(--divider);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-info h2 { color: var(--main-red); margin-bottom: 15px; }
+        .info-row { margin-bottom: 10px; border-bottom: 1px dashed var(--divider); padding-bottom: 5px; }
+        .info-label { font-weight: bold; width: 120px; display: inline-block; }
+        .copyright-note {
+            background: #fff3f3;
+            padding: 15px;
+            border-left: 4px solid var(--main-red);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .direct-reading {
+            margin-top: 30px;
+            background: #fffdf5;
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        .direct-reading h3 {
+            color: var(--main-red);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .reading-section {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--divider);
+        }
+        .reading-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .reading-section h4 {
+            color: #7a0505;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .reading-section p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .reading-section p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tác phẩm về Hồ Chí Minh</h1>
+        <h2>Theo dấu chân Người</h2>
+    </header>
+
+    <div class="container">
+        <a href="../tac_pham.html" class="back-link" style="display: inline-block; margin-bottom: 20px; color: var(--main-red); text-decoration: none; font-weight: bold;">← Quay lại danh mục Tác phẩm</a>
+        
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="../img/loikeugoitoanquockhangchien.jpg" alt="Bìa sách Lời kêu gọi toàn quốc kháng chiến">
+            </div>
+            <div class="book-info">
+                <h2> LỜI KÊU GỌI TOÀN QUỐC KHÁNG CHIẾN </h2>
+                <div class="info-row"><span class="info-label">Tác giả:</span> Hồ Chí Minh</div>
+                <div class="info-row"><span class="info-label">Phân loại:</span> Bảo vật quốc gia</div>
+                <div class="info-row"><span class="info-label">Năm sáng tác:</span> 1946 </div>
+                
+                <!-- <p style="margin: 20px 0; text-align: justify;">
+                    Tập thơ gồm 133 bài thơ bằng chữ Hán, phản ánh tâm hồn cao đẹp, nghị lực phi thường và trí tuệ anh minh của Người trong thời gian bị chính quyền Tưởng Giới Thạch giam cầm.
+                </p> -->
+
+                <a href="Tư liệu về Lời kêu gọi toàn quốc kháng chiến" target="_blank" class="btn">Đọc tại nguồn chính thống</a>
+
+                <div class="copyright-note">
+                    <strong>Lưu ý về bản quyền:</strong> Tài liệu chỉ mang tính tham khảo. Ưu tiên giới thiệu và dẫn link tới các nguồn lưu trữ chính thống của Nhà nước.
+                </div>
+            </div>
+        </div>
+
+        <section class="direct-reading">
+            <h3>Đọc trực tiếp</h3>
+
+            <article class="reading-section">
+                <h4>Bối cảnh sáng tác</h4>
+                <p>
+                    Sau Cách mạng Tháng Tám 1945, nước Việt Nam Dân chủ Cộng hòa vừa mới ra đời, chính quyền cách mạng còn non trẻ, phải đối mặt với nhiều khó khăn về kinh tế, chính trị và quân sự, đồng thời thực dân Pháp quay trở lại xâm lược với âm mưu đặt lại ách thống trị. Mặc dù Chính phủ Việt Nam đã nhiều lần nhân nhượng, ký kết Hiệp định Sơ bộ ngày 6/3/1946 và Tạm ước ngày 14/9/1946 nhằm giữ hòa bình, nhưng phía Pháp vẫn liên tiếp gây hấn, mở rộng chiến tranh, đặc biệt là các hành động khiêu khích, đàn áp và chiếm đóng ở Hà Nội và nhiều nơi khác.
+                </p>
+                <p>
+                    Đỉnh điểm là tối 18/12/1946, Pháp gửi tối hậu thư đòi tước quyền tự chủ của chính quyền Việt Nam và trong tình thế đó, để bảo vệ nền độc lập vừa giành được, Chủ tịch Hồ Chí Minh đã ra <strong>Lời kêu gọi toàn quốc kháng chiến</strong> vào ngày 19/12/1946. Thông qua văn kiện, Người kêu gọi toàn thể nhân dân Việt Nam đứng lên kháng chiến chống thực dân Pháp với tinh thần “thà hy sinh tất cả chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ”. Như vậy, có thể khẳng định, đây là văn kiện lịch sử mở đầu cho cuộc kháng chiến toàn quốc chống Pháp của dân tộc Việt Nam.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Nội dung tác phẩm</h4>
+                <p>
+                    <strong>Lời kêu gọi toàn quốc kháng chiến</strong> của Chủ tịch Hồ Chí Minh là văn kiện thể hiện rõ quyết tâm bảo vệ độc lập, tự do của dân tộc Việt Nam trước hành động xâm lược trở lại của thực dân Pháp. Thứ nhất, tác phẩm nhấn mạnh tinh thần đấu tranh kiên quyết của toàn dân tộc với lời khẳng định nổi tiếng: “Thà hy sinh tất cả chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ”, qua đó thể hiện ý chí sắt đá, không khuất phục trước kẻ thù. Thứ hai, Người nhấn mạnh lực lượng tham gia cuộc kháng chiến là toàn thể đồng bào, không phân biệt tầng lớp, tuổi tác hay giới tính, cùng đoàn kết đứng lên kháng chiến, coi đây là trách nhiệm chung của mọi người dân Việt Nam.
+                </p>
+                <P> 
+                    Thứ ba, tác phẩm còn xác định tính chất cuộc kháng chiến của dân tộc ta là chính nghĩa với mục tiêu bảo vệ độc lập dân tộc và quyền tự do của nhân dân. Thông qua tác phẩm, Người nhấn mạnh sức mạnh của khối đại đoàn kết toàn dân, phát động tinh thần “toàn dân kháng chiến, toàn diện kháng chiến”, huy động mọi lực lượng, mọi khả năng để tham gia cuộc đấu tranh lâu dài, gian khổ nhưng tất yếu sẽ giành thắng lợi.
+                </P>
+            </article>
+
+            <article class="reading-section">
+                <h4>Giá trị tác phẩm</h4>
+                <p>
+                    <strong>Lời kêu gọi toàn quốc kháng chiến</strong> có giá trị to lớn cả về lịch sử, chính trị và tư tưởng. Trước hết, về giá trị lịch sử, tác phẩm là văn kiện mở đầu cho cuộc kháng chiến toàn quốc chống thực dân Pháp, đánh dấu bước chuyển của dân tộc Việt Nam từ hòa bình sang thời kỳ chiến tranh cách mạng để bảo vệ độc lập. Tiếp theo, về giá trị chính trị, tác phẩm thể hiện đường lối đúng đắn, kịp thời của Đảng và Chủ tịch Hồ Chí Minh trong việc phát động toàn dân kháng chiến, xây dựng và phát huy sức mạnh đại đoàn kết dân tộc, huy động mọi tầng lớp nhân dân tham gia sự nghiệp chống ngoại xâm.
+                </p>
+                <p>
+                    Bên cạnh đó, về giá trị tư tưởng, văn kiện khẳng định chân lý “thà hy sinh tất cả chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ”, qua đó thể hiện sâu sắc tinh thần yêu nước, ý chí độc lập, tự do và tinh thần chiến đấu kiên cường của dân tộc Việt Nam. Đồng thời, tác phẩm còn cổ vũ mạnh mẽ tinh thần yêu nước, khơi dậy niềm tin vào thắng lợi cuối cùng của cuộc kháng chiến. Như vậy, với những giá trị đó, <strong>Lời kêu gọi toàn quốc kháng chiến</strong> không chỉ có ý nghĩa trong thời điểm lịch sử 1946 mà còn trở thành áng văn chính luận tiêu biểu, mang sức sống lâu dài trong lịch sử cách mạng Việt Nam.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="https://www.facebook.com/DoanHoiNBH.hcmussh">Đóng góp bài viết</a> | 
+            <a href="mailto:dtn.nhatbanhoc@hcmussh.edu.vn">Liên hệ</a>
+        </div>
+    </footer>
+
+</body>
+</html>

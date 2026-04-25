@@ -238,11 +238,39 @@ footer {
 
 /* Hero Slider (Khu vực chuyển cảnh) */
 .hero-slider {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Độ cao khung banner */
-    background: linear-gradient(to bottom, #fdfbd4 0%, #e8dcb3 100%); /* Màu nền dạng giấy cũ */
+    position: relative; 
+    width: 100%; 
+    min-height: 550px; /* Đổi height thành min-height để linh hoạt hơn */
+    padding-bottom: 80px; /* Tạo không gian phía dưới cho card đè lên không bị vướng chữ */
+    background: linear-gradient(to bottom, #fdfbd4 0%, #e8dcb3 100%); 
     overflow: hidden;
+    display: flex; /* Căn giữa toàn bộ slider theo chiều dọc */
+    align-items: center;
+}
+
+.slide-content { 
+    max-width: 1200px; 
+    width: 100%; 
+    padding: 0 5%; 
+    display: flex; 
+    align-items: center;
+    margin: 0 auto; /* Đảm bảo luôn canh giữa màn hình */
+}
+
+/* Sửa lại layout 1 để ảnh và chữ sát nhau hơn */
+.slide-layout-1 { 
+    justify-content: center; /* Gôm ảnh và chữ vào giữa */
+    gap: 60px; /* Giữ khoảng cách cố định 60px giữa ảnh và chữ */
+}
+
+.slide-image-left img, .slide-image-right img { 
+    height: 380px; /* Chỉnh chiều cao ảnh vừa phải để cân bằng với text */
+    object-fit: contain; 
+}
+
+.slide-text-center { 
+    text-align: center; 
+    max-width: 600px; /* Khống chế độ rộng tối đa của chữ để không bị bè ngang */
 }
 
 .slide {
@@ -259,14 +287,6 @@ footer {
 .slide.active {
     opacity: 1;
     z-index: 1;
-}
-
-.slide-content {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
 }
 
 /* Layout Slide 1 */
@@ -469,4 +489,214 @@ footer {
 /* Class dùng để ẩn bài viết khi lọc */
 .horizontal-card.hide-article {
     display: none !important;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Thêm 3 dòng dưới đây để ép Footer xuống đáy */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Tìm class .main-footer và thêm margin-top: auto */
+.main-footer {
+    background: var(--main-red); 
+    color: var(--accent-yellow); 
+    padding: 20px 5%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    font-weight: bold;
+    margin-top: auto; /* Lực đẩy tự động ép footer xuống sát đáy */
+}
+
+.overlap-cards { 
+    margin-top: 24px; /* Giữ khoảng cách an toàn, không đè lên slider */
+    position: relative; 
+    z-index: 10; 
+    margin-bottom: 60px; /* Giữ khoảng cách đẹp với Footer ở dưới */
+}
+
+/* Thêm khoảng trống ở đáy trang để nội dung không bị footer đè lên */
+body {
+    padding-bottom: 0; 
+}
+
+/* Footer chạy theo luồng tài liệu để tránh che nội dung */
+footer {
+    position: static;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    z-index: auto;
+    
+    /* Các thuộc tính cũ giữ nguyên */
+    background-color: var(--main-red);
+    color: var(--accent-yellow);
+    text-align: center;
+    padding: 15px 20px; /* Thu nhỏ padding lại một chút để không chiếm quá nhiều diện tích màn hình */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+/* ==============================
+   SỬA CHỒNG LẤP & RESPONSIVE
+============================== */
+
+.hero-slider {
+    min-height: clamp(640px, 70vw, 820px);
+    padding-bottom: 24px;
+}
+
+.slide-layout-1,
+.slide-layout-2 {
+    gap: 48px;
+}
+
+.slide-image-left,
+.slide-image-right {
+    flex: 1;
+    max-width: 520px;
+}
+
+.slide-image-left img,
+.slide-image-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+}
+
+.slide-text-center,
+.slide-text-left {
+    flex: 1;
+    max-width: 560px;
+}
+
+.slide-text-left {
+    width: auto;
+}
+
+@media (max-width: 1024px) {
+    .main-header {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .search-box {
+        margin-left: auto;
+    }
+
+    .slide-layout-1,
+    .slide-layout-2 {
+        gap: 28px;
+    }
+
+    .title-main {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-slider {
+        min-height: auto;
+        padding: 20px 0;
+        overflow: visible;
+    }
+
+    .slide {
+        position: relative;
+        top: auto;
+        left: auto;
+        height: auto;
+        opacity: 1;
+        transition: none;
+        display: none;
+    }
+
+    .slide.active {
+        display: flex;
+    }
+
+    .slide-content {
+        padding: 0 20px;
+    }
+
+    .slide-layout-1,
+    .slide-layout-2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18px;
+        padding-top: 0;
+    }
+
+    .slide-text-center,
+    .slide-text-left {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text-left,
+    .text-justify {
+        text-align: left;
+    }
+
+    .title-main {
+        font-size: 1.7rem;
+    }
+
+    .title-sub {
+        font-size: 1rem;
+    }
+
+    .desc,
+    .quote {
+        font-size: 1rem;
+    }
+
+    .overlap-cards {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .card-icon {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .main-footer {
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
 }

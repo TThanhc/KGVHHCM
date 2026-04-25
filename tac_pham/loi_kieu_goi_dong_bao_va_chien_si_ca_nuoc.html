@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tác phẩm - Theo dấu chân Người</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .book-detail { grid-template-columns: 1fr; }
+        }
+        .book-cover img {
+            width: 100%;
+            border: 1px solid var(--divider);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .book-info h2 { color: var(--main-red); margin-bottom: 15px; }
+        .info-row { margin-bottom: 10px; border-bottom: 1px dashed var(--divider); padding-bottom: 5px; }
+        .info-label { font-weight: bold; width: 120px; display: inline-block; }
+        .copyright-note {
+            background: #fff3f3;
+            padding: 15px;
+            border-left: 4px solid var(--main-red);
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .direct-reading {
+            margin-top: 30px;
+            background: #fffdf5;
+            border: 1px solid var(--divider);
+            border-radius: 8px;
+            padding: 24px;
+        }
+        .direct-reading h3 {
+            color: var(--main-red);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        .reading-section {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px dashed var(--divider);
+        }
+        .reading-section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .reading-section h4 {
+            color: #7a0505;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .reading-section p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .reading-section p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tác phẩm về Hồ Chí Minh</h1>
+        <h2>Theo dấu chân Người</h2>
+    </header>
+
+    <div class="container">
+        <a href="../tac_pham.html" class="back-link" style="display: inline-block; margin-bottom: 20px; color: var(--main-red); text-decoration: none; font-weight: bold;">← Quay lại danh mục Tác phẩm</a>
+        
+        <div class="book-detail">
+            <div class="book-cover">
+                <img src="../img/loikeugoichiensi.png" alt="Bìa sách Lời kêu gọi đồng bào và chiến sĩ cả nước">
+            </div>
+            <div class="book-info">
+                <h2>LỜI KÊU GỌI ĐỒNG BÀO VÀ CHIẾN SĨ CẢ NƯỚC</h2>
+                <div class="info-row"><span class="info-label">Tác giả:</span> Hồ Chí Minh</div>
+                <div class="info-row"><span class="info-label">Phân loại:</span> Bảo vật quốc gia</div>
+                <div class="info-row"><span class="info-label">Năm sáng tác:</span> 1966 </div>
+                
+                <!-- <p style="margin: 20px 0; text-align: justify;">
+                    Tập thơ gồm 133 bài thơ bằng chữ Hán, phản ánh tâm hồn cao đẹp, nghị lực phi thường và trí tuệ anh minh của Người trong thời gian bị chính quyền Tưởng Giới Thạch giam cầm.
+                </p> -->
+
+                <a href="https://tulieuhochiminh.vnulib.edu.vn/bitstream/VNUHCM/13049/1/4.Loi%20keu%20goi%20dong%20bao%20va%20chien%20si%20ca%20nuoc.pdf" target="_blank" class="btn">Đọc tại nguồn chính thống</a>
+
+                <div class="copyright-note">
+                    <strong>Lưu ý về bản quyền:</strong> Tài liệu chỉ mang tính tham khảo. Ưu tiên giới thiệu và dẫn link tới các nguồn lưu trữ chính thống của Nhà nước.
+                </div>
+            </div>
+        </div>
+
+        <section class="direct-reading">
+            <h3>Đọc trực tiếp</h3>
+
+            <article class="reading-section">
+                <h4>Bối cảnh sáng tác</h4>
+                <p>
+                    Sau khi mở rộng chiến tranh ra miền Bắc bằng không quân và hải quân, đế quốc Mỹ tiến hành cuộc chiến tranh phá hoại với quy mô lớn, tập trung đánh vào các mục tiêu kinh tế, quân sự và hệ thống giao thông nhằm làm suy yếu hậu phương lớn của cách mạng Việt Nam. Dưới sự càn quét của quân đội Mỹ, miền Bắc vừa phải đẩy mạnh sản xuất, vừa phải tổ chức chiến đấu để bảo vệ Tổ quốc và đồng thời chi viện sức người, sức của cho tiền tuyến miền Nam. Trong khi đó, ở miền Nam, cuộc kháng chiến chống Mỹ và chính quyền Sài Gòn diễn ra hết sức ác liệt, đầy gian khổ và hy sinh. 
+                </p>
+                <p>
+                    Đứng trước những thử thách to lớn đó, đòi hỏi tinh thần đoàn kết cao độ, ý chí kiên cường và quyết tâm chiến đấu bền bỉ của toàn thể dân tộc Việt Nam. Nhằm kịp thời động viên đồng bào và chiến sĩ cả nước, đồng thời củng cố niềm tin vào thắng lợi, khơi dậy tinh thần yêu nước và ý chí chiến đấu, Chủ tịch Hồ Chí Minh đã ra <strong>Lời kêu gọi đồng bào và chiến sĩ cả nước</strong> vào ngày 17/7/1966. Văn kiện đã thể hiện quyết tâm sắt đá của dân tộc Việt Nam trong cuộc kháng chiến chống Mỹ, khẳng định niềm tin vững chắc vào thắng lợi cuối cùng của sự nghiệp giải phóng dân tộc và thống nhất đất nước.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Nội dung tác phẩm</h4>
+                <p>
+                    <strong>Lời kêu gọi đồng bào và chiến sĩ cả nước</strong> (17/7/1966) tập trung thể hiện quyết tâm và ý chí chiến đấu của toàn dân tộc Việt Nam trong cuộc kháng chiến chống Mỹ cứu nước. Trước hết, tác phẩm nêu rõ âm mưu và hành động leo thang chiến tranh của đế quốc Mỹ, đặc biệt là việc mở rộng đánh phá miền Bắc, từ đó khẳng định tính chất chính nghĩa cuộc kháng chiến của nhân dân ta. Trên cơ sở đó, Chủ tịch Hồ Chí Minh kêu gọi toàn thể đồng bào và chiến sĩ cả nước nêu cao tinh thần yêu nước, đoàn kết một lòng, kiên quyết chiến đấu chống giặc Mỹ xâm lược.
+                </p>
+                <p>
+                    Bên cạnh đó, tác phẩm không những nhấn mạnh tinh thần “không có gì quý hơn độc lập, tự do”, khẳng định quyết tâm đánh thắng giặc Mỹ xâm lược, dù phải trải qua nhiều hy sinh, gian khổ của dân tộc Việt Nam mà còn lời lời động viên quân và dân cả nước chiến đấu và sản xuất để giữ vững hậu phương miền Bắc và chi viện cho tiền tuyến miền Nam, góp phần tạo nên sức mạnh tổng hợp của cả dân tộc. Cuối cùng, lời kêu gọi còn thể hiện niềm tin sâu sắc vào sức mạnh đoàn kết toàn dân và chắc chắn thắng lợi cuối cùng của cuộc kháng chiến chống Mỹ cứu nước.
+                </p>
+            </article>
+
+            <article class="reading-section">
+                <h4>Giá trị tác phẩm</h4>
+                <p>
+                    <strong>Lời kêu gọi đồng bào và chiến sĩ cả nước</strong> có giá trị to lớn và toàn diện trên nhiều phương diện cả về lịch sử, chính trị lẫn tư tưởng và thực tiễn. Trước hết, về giá trị lịch sử, tác phẩm là một văn kiện đặc biệt quan trọng trong cuộc kháng chiến chống Mỹ cứu nước, đánh dấu thời điểm cả nước bước vào giai đoạn chiến đấu quyết liệt nhằm bảo vệ độc lập, thống nhất Tổ quốc. Tác phẩm đã trở thành tiếng gọi thiêng liêng, cổ vũ tinh thần chiến đấu của toàn dân tộc trong hoàn cảnh chiến tranh ác liệt.
+                </p>
+                <p>
+                    Tiếp theo, về giá trị chính trị, tác phẩm thể hiện đường lối lãnh đạo đúng đắn, kịp thời của Đảng và Chủ tịch Hồ Chí Minh trong việc phát huy sức mạnh đại đoàn kết toàn dân tộc. Văn kiện khẳng định sự kết hợp chặt chẽ giữa hậu phương miền Bắc và tiền tuyến miền Nam, đồng thời huy động mọi tầng lớp nhân dân tham gia kháng chiến, tạo nên sức mạnh tổng hợp để đánh thắng kẻ thù. 
+                </p>
+                <p>
+                    Bên cạnh đó, về giá trị tư tưởng, tác phẩm thể hiện sâu sắc tinh thần yêu nước, ý chí độc lập, tự do và chân lý bất hủ “không có gì quý hơn độc lập, tự do”. Tác phẩm đã khơi dậy mạnh mẽ lòng yêu nước, niềm tin vào thắng lợi cuối cùng và tinh thần lạc quan cách mạng của nhân dân ta trong điều kiện chiến tranh vô cùng gian khổ, ác liệt.
+                </p>
+                <p>
+                    Không những thế, về giá trị thực tiễn, tác phẩm có tác dụng to lớn trong việc động viên quân và dân cả nước vừa chiến đấu, vừa sản xuất, vừa xây dựng hậu phương vững mạnh, chi viện cho tiền tuyến. Tác phẩm đã góp phần củng cố tinh thần đoàn kết, thống nhất ý chí và hành động, tạo động lực quan trọng đưa cuộc kháng chiến chống Mỹ đi đến thắng lợi cuối cùng.
+                </p>
+                <p>
+                    Như vậy, <strong>Lời kêu gọi đồng bào và chiến sĩ cả nước</strong> không chỉ có ý nghĩa trong một thời điểm lịch sử cụ thể mà còn mang giá trị bền vững, trở thành áng văn chính luận giàu sức thuyết phục, có sức sống lâu dài trong lịch sử cách mạng Việt Nam.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-left">
+            <span>🎓 HỌC TẬP – RÈN LUYỆN – PHỤNG SỰ</span>
+        </div>
+        <div class="footer-right">
+            <a href="#">Kho tư liệu</a> | 
+            <a href="https://www.facebook.com/DoanHoiNBH.hcmussh">Đóng góp bài viết</a> | 
+            <a href="mailto:dtn.nhatbanhoc@hcmussh.edu.vn">Liên hệ</a>
+        </div>
+    </footer>
+
+</body>
+</html>
